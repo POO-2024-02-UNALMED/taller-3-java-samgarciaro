@@ -60,7 +60,6 @@ public class TV {
         }
     }
     
-
     public void setVolumen(int volumen){
         if (this.estado && 0 <= this.volumen &&  7>= this.volumen){
             this.volumen = volumen;
