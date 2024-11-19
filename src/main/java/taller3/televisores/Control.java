@@ -33,28 +33,21 @@ public class Control {
 		}		
 	}
 	
-	public void volumenUp(){
-        if(this.estado==true && this.volumen>=0 && this.volumen<=6){
-            setVolumen(this.volumen+1);
-        }
-        return; 
-    }
-    public void volumenDown(){
-        if(this.estado==true && this.volumen>=1 && this.volumen<=7){
-            setVolumen(this.volumen-1);
-        }
-        return;
-    }
+	public void volumenUp() {
+		this.tv.volumenUp();
+	}
+	public void volumenDown() {
+		this.tv.volumenDown();
+	}
 	
-	public void setCanal(int canal){
-        if(tv!=null){
-            tv.setCanal(canal);
-        } 
-    }
-    public void setVolumen(int volumen){
-        if(tv!=null){
-            tv.setVolumen(volumen);
+	public void setCanal(int canal) {
+		if (tv.getEstado() && tv.getCanal() >= 1 && tv.getCanal() <= 120) {
+            tv.setCanal(tv.getCanal()-1);
         }
-    }
+	}
+	
+	public void setVolumen(int volumen) {
+		this.tv.setVolumen(volumen);
+	}
 	
 }
