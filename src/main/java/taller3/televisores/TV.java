@@ -66,6 +66,10 @@ public class TV {
         }
     }
 
+    public int getVolumen(){
+        return this.volumen;
+    }
+
     public int getCanal(){
         return this.canal;
     }
