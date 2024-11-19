@@ -19,10 +19,10 @@ public class TV {
         int numTV = TV.numTV+1;
     }
 
-    public static int getNumTv(){
+    public static int getNumTV(){
         return numTV;
     }
-    public static void setNumTv(int numTV){
+    public static void setNumTV(int numTV){
         TV.numTV = numTV;
     }
 
