@@ -19,10 +19,10 @@ public class TV {
         int numTV = TV.numTV+1;
     }
 
-    public static int getNumtv(){
+    public static int getNumTv(){
         return numTV;
     }
-    public static void setNumTV(int numTV){
+    public static void setNumTv(int numTV){
         TV.numTV = numTV;
     }
 
@@ -68,6 +68,10 @@ public class TV {
         return this.canal;
     }
 
+    public void setMarca(Marca marca){
+        this.marca = marca;
+    }
+
     public Marca getMarca(){
         return this.marca;
     }
@@ -78,5 +82,9 @@ public class TV {
 
     public void setControl(Control control){
         this.control = control;
+    }
+
+    public Control getControl(){
+        return this.control;
     }
 }
