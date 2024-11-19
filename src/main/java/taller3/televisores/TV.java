@@ -16,7 +16,7 @@ public class TV {
         this.estado = estado;
         this.marca = marca;
 
-        int numTV = TV.numTV+1;
+        numTV++;
     }
 
     public static int getNumTV(){
