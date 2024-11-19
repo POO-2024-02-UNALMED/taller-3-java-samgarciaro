@@ -23,10 +23,14 @@ public class Control {
 	}
 	
 	public void canalUp() {
-		this.tv.canalUp();
+		if (tv.getEstado() && tv.getCanal() >= 1 && tv.getCanal() <= 120) {
+			tv.setCanal(tv.getCanal() + 1);
+		}		
 	}
 	public void canalDown() {
-		this.tv.canalDown();
+		if (tv.getEstado() && tv.getCanal() >= 1 && tv.getCanal() <= 120) {
+			tv.setCanal(tv.getCanal() - 1);
+		}		
 	}
 	
 	public void volumenUp() {
@@ -43,4 +47,5 @@ public class Control {
 	public void setVolumen(int volumen) {
 		this.tv.setVolumen(volumen);
 	}
+	
 }
