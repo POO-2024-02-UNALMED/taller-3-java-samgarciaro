@@ -64,6 +64,7 @@ public class TV {
         if (this.estado && 0 <= this.volumen &&  7>= this.volumen){
             this.volumen = volumen;
         }
+        return;
     }
 
     public int getVolumen(){
