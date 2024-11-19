@@ -11,7 +11,7 @@ public class Control {
     public TV getTv(){
         return tv;
     }
-    public void setTV(TV tv){
+    public void setTv(TV tv){
         this.tv = tv;
     }
 
